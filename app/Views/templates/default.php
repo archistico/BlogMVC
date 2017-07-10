@@ -7,45 +7,45 @@
     <title><?= App::getInstance()->title; ?></title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-<!-- Bootstrap 3.3.6 -->
-<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-<!-- Ionicons -->
-<link rel="stylesheet" href="vendor/ionicons/css/ionicons.min.css">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="vendor/ionicons/css/ionicons.min.css">
 
-<!-- DataTables -->
-<link rel="stylesheet" href="vendor/datatables/dataTables.bootstrap.css">
-<!-- bootstrap datepicker -->
-<link rel="stylesheet" href="vendor/datepicker/datepicker3.css">
-<!-- iCheck for checkboxes and radio inputs -->
-<link rel="stylesheet" href="vendor/iCheck/all.css">
-<!-- Select2 -->
-<link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="vendor/datatables/dataTables.bootstrap.css">
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="vendor/datepicker/datepicker3.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="vendor/iCheck/all.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
 
-<!-- Theme style -->
-<link rel="stylesheet" href="vendor/adminlte/css/AdminLTE.min.css">
-<!-- AdminLTE Skins. Choose a skin from the css/skins
-     folder instead of downloading all of them to reduce the load. -->
-<link rel="stylesheet" href="vendor/adminlte/css/skins/_all-skins.min.css">
-<!-- Emilie style -->
-<link rel="stylesheet" href="css/studio.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="vendor/adminlte/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="vendor/adminlte/css/skins/_all-skins.min.css">
+    <!-- Emilie style -->
+    <link rel="stylesheet" href="css/studio.css">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
-    <div class="wrapper">
+<div class="wrapper">
 
-        <header class="main-header">
-            <a href="index.php" class="logo">
-                <span class="logo-mini"><b>A</b>BC</span>
-                <span class="logo-lg"><b>Abc</b>Test</span>
+    <header class="main-header">
+        <a href="index.php" class="logo">
+            <span class="logo-mini"><b>A</b>BC</span>
+            <span class="logo-lg"><b>Abc</b>Test</span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
             </a>
-            <nav class="navbar navbar-static-top">
-                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                    <span class="sr-only">Toggle navigation</span>
-                </a>
 
-                            <div class="navbar-custom-menu">
+            <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
@@ -63,154 +63,154 @@
                                 <img src="img/logopiccolo.jpg" class="img-circle" alt="User Image">
                             </li>
                             <!-- Menu Footer-->
-                            
+
                             <li class="user-footer">
                                 <div class="pull-right">
                                     <a href="#" class="btn btn-default btn-flat">Logout</a>
                                 </div>
                             </li>
-                            
+
                         </ul>
                     </li>
                 </ul>
             </div>
-            </nav>
-        </header>
-        <aside class="main-sidebar">
-            <section class="sidebar">
-                <ul class="sidebar-menu">
-    <li class="header">Menu</li>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <ul class="sidebar-menu">
+                <li class="header">Menu</li>
 
-    <li class="active treeview">
-        <a href="index.php">
-            <i class="fa fa-dashboard"></i> <span>Home</span>
-        </a>
-    </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-user"></i> <span>Link1</span>
-            <i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-plus"></i> Link1.1</a></li>
-            <li><a href=""><i class="fa fa-list"></i> Link1.2</a></li>
-        </ul>
-    </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-barcode"></i> <span>Link2</span>
-            <i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-plus"></i> Link2.1</a></li>
-            <li><a href=""><i class="fa fa-list"></i> Link2.2</a></li>
-        </ul>
-    </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-truck"></i> <span>Link</span>
-            <i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-plus"></i> Link</a></li>
-            <li><a href=""><i class="fa fa-list"></i> Link</a></li>
-        </ul>
-    </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-file-text"></i> <span>Link</span>
-            <i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-plus"></i> Link</a></li>
-            <li><a href=""><i class="fa fa-list"></i> Link</a></li>
-            <li><a href=""><i class="fa fa-euro"></i> Link</a></li>
-        </ul>
-    </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-pie-chart"></i> <span>Link</span>
-            <i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-line-chart"></i> Link</a></li>
-            <li><a href=""><i class="fa fa-bar-chart"></i> Link</a></li>
-            <li><a href=""><i class="fa fa-money"></i> Link</a></li>
-            <li><a href=""><i class="fa fa-bar-chart"></i> Link</a></li>
-        </ul>
-    </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-gear"></i> <span>Link</span>
-            <i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-database"></i> Link</a></li>
-        </ul>
-    </li>
+                <li class="active treeview">
+                    <a href="index.php">
+                        <i class="fa fa-dashboard"></i> <span>Home</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-user"></i> <span>Link1</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href=""><i class="fa fa-plus"></i> Link1.1</a></li>
+                        <li><a href=""><i class="fa fa-list"></i> Link1.2</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-barcode"></i> <span>Link2</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href=""><i class="fa fa-plus"></i> Link2.1</a></li>
+                        <li><a href=""><i class="fa fa-list"></i> Link2.2</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-truck"></i> <span>Link</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href=""><i class="fa fa-plus"></i> Link</a></li>
+                        <li><a href=""><i class="fa fa-list"></i> Link</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-file-text"></i> <span>Link</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href=""><i class="fa fa-plus"></i> Link</a></li>
+                        <li><a href=""><i class="fa fa-list"></i> Link</a></li>
+                        <li><a href=""><i class="fa fa-euro"></i> Link</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-pie-chart"></i> <span>Link</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href=""><i class="fa fa-line-chart"></i> Link</a></li>
+                        <li><a href=""><i class="fa fa-bar-chart"></i> Link</a></li>
+                        <li><a href=""><i class="fa fa-money"></i> Link</a></li>
+                        <li><a href=""><i class="fa fa-bar-chart"></i> Link</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-gear"></i> <span>Link</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href=""><i class="fa fa-database"></i> Link</a></li>
+                    </ul>
+                </li>
 
-</ul>
-            </section>
-        </aside>
+            </ul>
+        </section>
+    </aside>
 
-        <div class="content-wrapper">
-                <section class="content-header">
-                    <h1>
-                        Sezione
-                        <small>Sottosezione</small>
-                    </h1>
-                </section>
+    <div class="content-wrapper">
+        <section class="content-header">
+            <h1>
+                Sezione
+                <small>Sottosezione</small>
+            </h1>
+        </section>
 
-                <!-- Main content -->
-                <section class="content">
+        <!-- Main content -->
+        <section class="content">
 
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                            <div class="box">
-                                <div class="box-header">
-                                    <h3 class="box-title">Titolo box</h3>
-                                </div>
-                                <div class="box-body">
-                                    <div class="col-md-6 col-xs-12">
-                                        <h1>
-                                            Testo box body
-                                        </h1>
-                                    </div>
-                                </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Titolo box</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="col-md-6 col-xs-12">
+                                <h1>
+                                    Testo box body
+                                </h1>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="box">
-                                <div class="box-header">
-                                    <h3 class="box-title">MENU RAPIDO</h3>
-                                </div>
-                                <div class="box-body">
-                                    <?= $content; ?>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">MENU RAPIDO</h3>
+                        </div>
+                        <div class="box-body">
+                            <?= $content; ?>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                </section>
-                <!-- /.content -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> YYYYMMDD
         </div>
-        <!-- /.content-wrapper -->
-        
-        <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-        <b>Version</b> YYYYMMDD
-    </div>
-    <strong>Copyright &copy; <?php $copyYear = 2016; $curYear = date('Y'); echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : ''); ?> <a href="http://">Dati Copyright</a></strong> - All rights reserved - <a href="https://almsaeedstudio.com/">Theme</a>
-</footer>
+        <strong>Copyright &copy; <?php $copyYear = 2016; $curYear = date('Y'); echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : ''); ?> <a href="http://">Dati Copyright</a></strong> - All rights reserved - <a href="https://almsaeedstudio.com/">Theme</a>
+    </footer>
 
-    </div>
-    <!-- ./wrapper -->
+</div>
+<!-- ./wrapper -->
 
-    <!-- jQuery 2.2.0 -->
+<!-- jQuery 2.2.0 -->
 <script src="vendor/jQuery/jQuery-2.2.0.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="vendor/jQueryUI/jquery-ui.min.js"></script>
@@ -222,7 +222,7 @@
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!-- https://github.com/DmitryBaranovskiy/raphael Cross-browser vector graphics the easy way -->
 <script src="vendor/raphael/raphael-min.js"></script>
-<script src="vendor/knob/jquery.knob.js"></script> 
+<script src="vendor/knob/jquery.knob.js"></script>
 <script src="vendor/moment/moment.min.js"></script>
 <!-- datepicker -->
 <script src="vendor/datepicker/bootstrap-datepicker.js"></script>
@@ -243,10 +243,10 @@
 
 <script src="vendor/select2/select2.full.min.js"></script>
 <script>
-            $(function () {
-                //Initialize Select2 Elements
-                $(".select2").select2(); 
-            });
+    $(function () {
+        //Initialize Select2 Elements
+        $(".select2").select2();
+    });
 </script>
 </body>
 
