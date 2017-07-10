@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/blog.css" rel="stylesheet">
 </head>
 
 <body>
