@@ -18,11 +18,12 @@ class BootstrapForm extends Form{
      */
     public function input($name, $label, $options = []){
         $type = isset($options['type']) ? $options['type'] : 'text';
+        $id = isset($options['id']) ? $options['id'] : '';
         $label = '<label>' . $label . '</label>';
         if($type === 'textarea'){
             $input = '<textarea name="' . $name . '" class="form-control">' . $this->getValue($name) . '</textarea>';
         } else{
-            $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name) . '" class="form-control">';
+            $input = '<input type="' . $type . '" name="' . $name . '" value="' . $this->getValue($name).'" id="' . $id . '" class="form-control">';
         }
         return $this->surround($label . $input);
     }
@@ -39,6 +40,13 @@ class BootstrapForm extends Form{
         }
         $input .= '</select>';
         return $this->surround($label . $input);
+    }
+
+    public function summernote($name, $label, $options = []){
+        $label = '<label>' . $label . '</label>';
+        $input = '<input type="hidden" name="' . $name . '" value="' . $this->getValue($name).'" id="' . $name . '" class="form-control">';
+        $div = '<div id="summernote">' . $this->getValue($name) . '</div>';
+        return $this->surround($label . $input . $div);
     }
 
     /**
