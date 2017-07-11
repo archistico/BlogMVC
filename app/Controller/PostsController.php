@@ -15,7 +15,10 @@ class PostsController extends AppController{
     public function index(){
         $posts = $this->Post->last();
         $categories = $this->Category->all();
-        $this->render('posts.index', compact('posts', 'categories'));
+
+        $menuActive = "Homepage";
+
+        $this->render('posts.index', compact('posts', 'categories', 'menuActive'));
     }
 
     public function category(){

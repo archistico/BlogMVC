@@ -10,8 +10,8 @@ class PostEntity extends Entity{
     }
 
     public function getExtrait(){
-        $html = '<p>' . substr($this->contenu, 0, 100) . '...</p>';
-        $html .= '<p><a href="' . $this->getURL() . '">Voir la suite</a></p>';
+        $html = '<p>' . substr($this->contenu, 0, 200) . '...</p>';
+        $html .= '<p><a href="' . $this->getURL() . '">Continua</a></p>';
         return $html;
     }
 

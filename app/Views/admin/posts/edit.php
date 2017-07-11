@@ -1,6 +1,11 @@
-<form method="post">
-    <?= $form->input('titre', 'Tire de l\'article'); ?>
-    <?= $form->input('contenu', 'Contenu', ['type' => 'textarea']); ?>
-    <?= $form->select('category_id', 'Catégorie', $categories); ?>
-    <button class="btn btn-primary">Sauvegarder</button>
-</form>
+<div class="box-header">
+    <h1 class="box-title">POST</h1>
+</div>
+<div class="box-body">
+    <form method="post">
+        <?= $form->input('titre', 'Titolo dell\'articolo'); ?>
+        <?= $form->input('contenu', 'Contenuto', ['type' => 'textarea']); ?>
+        <?= $form->select('category_id', 'Categoria', $categories); ?>
+        <button class="btn btn-primary">Salvare</button>
+    </form>
+</div>

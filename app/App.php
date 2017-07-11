@@ -6,7 +6,35 @@ use Core\Database\MysqlDatabase;
 class App{
 
     public $title = "Blog";
-    public $boxtitle = "Titolo pagina";
+    public $boxtitle = "Generale";
+    public $menus = [
+         /*'0' => [
+            testo => 'Homepage',
+            icona => 'home',
+            sottomenu => [
+            ]],*/
+        '1' => [
+            testo => 'Blog',
+            icona => 'list',
+            sottomenu => [
+                [icona => 'list', testo=> 'Blog list', url => '?p=posts.index'],
+            ]],
+        '2' => [
+            testo => 'Admin',
+            icona => 'key',
+            sottomenu => [
+                [icona => 'key', testo=> 'User login', url => '?p=users.login'],
+                [icona => 'list', testo=> 'Users list', url => '?p=admin.users.index'],
+
+                [icona => 'plus', testo=> 'Post add', url => '?p=admin.posts.add'],
+                [icona => 'list', testo=> 'Posts list', url => '?p=admin.posts.index'],
+
+                [icona => 'plus', testo=> 'Category add', url => '?p=admin.categories.add'],
+                [icona => 'list', testo=> 'Categories list', url => '?p=admin.categories.index'],
+
+            ]],
+    ];
+
     private $db_instance;
     private static $_instance;
 
@@ -38,4 +66,7 @@ class App{
         return $this->db_instance;
     }
 
+    public function getMenu() {
+        return $this->menus;
+    }
 }

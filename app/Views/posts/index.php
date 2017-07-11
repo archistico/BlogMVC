@@ -1,22 +1,27 @@
-<div class="row">
-    <div class="col-sm-8">
-        <?php foreach ($posts as $post): ?>
+<div class="box-header">
+    <h1 class="box-title">LISTA DEI POST</h1>
+</div>
+<div class="box-body">
+    <div class="row">
+        <div class="col-sm-8">
+            <?php foreach ($posts as $post): ?>
 
-            <h2><a href="<?= $post->url ?>"><?= $post->titre; ?></a></h2>
+                <h2><a href="<?= $post->url ?>"><?= $post->titre; ?></a></h2>
 
-            <p><em><?= $post->categorie; ?></em></p>
+                <p><em><?= $post->categorie; ?></em></p>
 
-            <p><?= $post->extrait; ?></p>
+                <p><?= $post->extrait; ?></p>
 
-        <?php endforeach; ?>
+            <?php endforeach; ?>
 
-    </div>
+        </div>
 
-    <div class="col-sm-4">
-        <ul>
-        <?php foreach($categories as $categorie): ?>
-            <li><a href="<?= $categorie->url; ?>"><?= $categorie->titre; ?></a></li>
-        <?php endforeach; ?>
-        </ul>
+        <div class="col-sm-4">
+            <ul>
+                <?php foreach($categories as $categorie): ?>
+                    <li><a href="<?= $categorie->url; ?>"><?= $categorie->titre; ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
     </div>
 </div>
