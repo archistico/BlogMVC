@@ -154,39 +154,15 @@
     </aside>
 
     <div class="content-wrapper">
-        <section class="content-header">
-            <h1>
-                Sezione
-                <small>Sottosezione</small>
-            </h1>
-        </section>
 
         <!-- Main content -->
         <section class="content">
 
             <div class="row">
-                <div class="col-md-12 col-xs-12">
-                    <div class="box">
-                        <div class="box-header">
-                            <h3 class="box-title">Titolo box</h3>
-                        </div>
-                        <div class="box-body">
-                            <div class="col-md-6 col-xs-12">
-                                <h1>
-                                    Testo box body
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">MENU RAPIDO</h3>
+                            <h1 class="box-title"><?= App::getInstance()->boxtitle; ?></h1>
                         </div>
                         <div class="box-body">
                             <?= $content; ?>
