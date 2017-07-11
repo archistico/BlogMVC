@@ -86,7 +86,7 @@
             <?php $menus = App::getInstance()->getMenu(); foreach ($menus as $menu): ?>
 
                 <li class="<?= $menu['testo']==$menuActive?'active':''; ?> treeview">
-                    <a href="#">
+                    <a href="<?= $menu['sottomenu']?$menu['url']:''; ?>">
                         <i class="fa fa-<?= $menu['icona']; ?>"></i> <span><?= $menu['testo']; ?></span>
                         <?php if($menu['sottomenu']): ?>
                             <i class="fa fa-angle-left pull-right"></i>

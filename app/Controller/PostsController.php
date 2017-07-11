@@ -16,7 +16,7 @@ class PostsController extends AppController{
         $posts = $this->Post->last();
         $categories = $this->Category->all();
 
-        $menuActive = "Homepage";
+        $menuActive = "Blog";
 
         $this->render('posts.index', compact('posts', 'categories', 'menuActive'));
     }
@@ -28,12 +28,18 @@ class PostsController extends AppController{
         }
         $articles = $this->Post->lastByCategory($_GET['id']);
         $categories = $this->Category->all();
-        $this->render('posts.category', compact('articles', 'categories', 'categorie'));
+
+        $menuActive = "Blog";
+
+        $this->render('posts.category', compact('articles', 'categories', 'categorie', 'menuActive'));
     }
 
     public function show(){
         $article = $this->Post->findWithCategory($_GET['id']);
-        $this->render('posts.show', compact('article'));
+
+        $menuActive = "Blog";
+
+        $this->render('posts.show', compact('article', 'menuActive'));
     }
 
 }

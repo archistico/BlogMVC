@@ -8,11 +8,12 @@ class App{
     public $title = "Blog";
     public $boxtitle = "Generale";
     public $menus = [
-         /*'0' => [
+         '0' => [
             testo => 'Homepage',
+            url => '?p=posts.index',
             icona => 'home',
             sottomenu => [
-            ]],*/
+            ]],
         '1' => [
             testo => 'Blog',
             icona => 'list',
