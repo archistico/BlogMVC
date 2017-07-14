@@ -9,29 +9,29 @@ class App{
     public $boxtitle = "Generale";
     public $menus = [
          '0' => [
-            testo => 'Homepage',
-            url => '?p=posts.index',
-            icona => 'home',
-            sottomenu => [
+            'testo' => 'Homepage',
+            'url' => '?p=posts.index',
+            'icona' => 'home',
+            'sottomenu' => [
             ]],
         '1' => [
-            testo => 'Blog',
-            icona => 'list',
-            sottomenu => [
-                [icona => 'list', testo=> 'Blog list', url => '?p=posts.index'],
+            'testo' => 'Blog',
+            'url' => '',
+            'icona' => 'list',
+            'sottomenu' => [
+                ['icona' => 'list', 'testo'=> 'Blog list', 'url' => '?p=posts.index'],
             ]],
         '2' => [
-            testo => 'Admin',
-            icona => 'key',
-            sottomenu => [
-                [icona => 'key', testo=> 'User login', url => '?p=users.login'],
-                [icona => 'list', testo=> 'Users list', url => '?p=admin.users.index'],
-
-                [icona => 'plus', testo=> 'Post add', url => '?p=admin.posts.add'],
-                [icona => 'list', testo=> 'Posts list', url => '?p=admin.posts.index'],
-
-                [icona => 'plus', testo=> 'Category add', url => '?p=admin.categories.add'],
-                [icona => 'list', testo=> 'Categories list', url => '?p=admin.categories.index'],
+            'testo' => 'Admin',
+            'url' => '',
+            'icona' => 'key',
+            'sottomenu' => [
+                ['icona' => 'key',  'testo'=> 'User login', 'url' => '?p=users.login'],
+                ['icona' => 'list', 'testo'=> 'Users list', 'url' => '?p=admin.users.index'],
+                ['icona' => 'plus', 'testo'=> 'Post add', 'url' => '?p=admin.posts.add'],
+                ['icona' => 'list', 'testo'=> 'Posts list', 'url' => '?p=admin.posts.index'],
+                ['icona' => 'plus', 'testo'=> 'Category add', 'url' => '?p=admin.categories.add'],
+                ['icona' => 'list', 'testo'=> 'Categories list', 'url' => '?p=admin.categories.index'],
 
             ]],
     ];
