@@ -32,7 +32,10 @@ class App{
                 ['icona' => 'list', 'testo'=> 'Posts list', 'url' => '?p=admin.posts.index'],
                 ['icona' => 'plus', 'testo'=> 'Category add', 'url' => '?p=admin.categories.add'],
                 ['icona' => 'list', 'testo'=> 'Categories list', 'url' => '?p=admin.categories.index'],
-                ['icona' => 'plus', 'testo'=> 'Client add', 'url' => '?p=admin.clienti.add'],
+                ['icona' => 'plus', 'testo'=> 'Clienti add', 'url' => '?p=admin.clienti.add'],
+                ['icona' => 'list', 'testo'=> 'Clienti list', 'url' => '?p=admin.clienti.index'],
+                ['icona' => 'plus', 'testo'=> 'Fattura add', 'url' => '?p=admin.fatture.add'],
+                ['icona' => 'list', 'testo'=> 'Fatture list', 'url' => '?p=admin.fatture.index'],
             ]],
     ];
 
