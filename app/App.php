@@ -32,7 +32,7 @@ class App{
                 ['icona' => 'list', 'testo'=> 'Posts list', 'url' => '?p=admin.posts.index'],
                 ['icona' => 'plus', 'testo'=> 'Category add', 'url' => '?p=admin.categories.add'],
                 ['icona' => 'list', 'testo'=> 'Categories list', 'url' => '?p=admin.categories.index'],
-
+                ['icona' => 'plus', 'testo'=> 'Client add', 'url' => '?p=admin.clienti.add'],
             ]],
     ];
 
